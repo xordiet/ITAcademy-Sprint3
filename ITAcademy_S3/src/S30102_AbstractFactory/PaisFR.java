@@ -1,13 +1,13 @@
 package S30102_AbstractFactory;
 
-public class PaisUSA implements Pais{
+public class PaisFR implements Pais{
 	
 	private String prefix;
 	private String sufix;
 	
-	public PaisUSA() {
-		this.prefix = "+33 ";
-		this.sufix = " - FRANCE";
+	public PaisFR() {
+		this.prefix = "+49 ";
+		this.sufix = " - GERMANY";
 	}
 
 	@Override
