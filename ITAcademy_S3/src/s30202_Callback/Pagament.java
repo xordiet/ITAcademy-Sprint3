@@ -2,19 +2,30 @@ package s30202_Callback;
 
 public final class Pagament extends Tasca{
 	
-	private String formaPagament;
+	private Main.Pagament formaPagament;
+	private Double totalCompra;
+	
+	
 
-	public String getFormaPagament() {
+	public Main.Pagament getFormaPagament() {
 		return formaPagament;
 	}
 
-	public void setFormaPagament(String formaPagament) {
+	public Double getTotalCompra() {
+		return totalCompra;
+	}
+
+	public void setFormaPagament(Main.Pagament formaPagament) {
 		this.formaPagament = formaPagament;
+	}
+
+	public void setTotalCompra(Double totalCompra) {
+		this.totalCompra = totalCompra;
 	}
 
 	@Override
 	public void executa() {
-		System.out.println("Faig el pagament amb " + getFormaPagament() + " i retorno el resultat via CallBack");
+		System.out.println("Faig el pagament de " + getTotalCompra() + " amb " + getFormaPagament() + " i retorno el resultat via CallBack");
 	}
 
 }

@@ -1,12 +1,15 @@
 package s30202_Callback;
 
 public abstract class Main {
+	
+	enum Pagament {TARG_CREDIT, PAYPAL, CC};
     
     public static void main(String[] args){
-    	var task = new Pagament();
-    	task.setFormaPagament("Paypal");
     	
-        task.executeWith(() -> System.out.println("Gràcies per la teva compra!"));
+    	Botiga sabateria = new Botiga();
+    	sabateria.setSumaTiquet(39.99);
+    	sabateria.setFormaPagament(Pagament.PAYPAL);
+    	sabateria.compra();
     }
 
 }
