@@ -1,8 +1,9 @@
 package S30102_AbstractFactory;
 
-public class PaisosFabrica {
-	
-	public Pais getConexion(String paisRebut) {
+public class FormataPais implements FabricaAbstracta{
+
+	@Override
+	public Pais getPais(String paisRebut) {
 		Pais pais = null;
 		switch(paisRebut){
 			case "Alemanya":
@@ -19,6 +20,12 @@ public class PaisosFabrica {
 				break;
 		}
 		return pais;
+	}
+
+	@Override
+	public Registre getRegistre(String registre) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

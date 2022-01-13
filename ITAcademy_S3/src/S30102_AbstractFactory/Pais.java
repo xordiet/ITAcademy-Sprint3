@@ -2,7 +2,6 @@ package S30102_AbstractFactory;
 
 public interface Pais {
 	
-	void formataAdresa();
-	void formataTelefon();
-
+	String formataAdresa(String registre);
+	String formataTelefon(String registre);
 }

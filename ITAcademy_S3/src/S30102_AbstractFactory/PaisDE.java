@@ -11,15 +11,13 @@ public class PaisDE implements Pais{
 	}
 
 	@Override
-	public void formataAdresa() {
-		// TODO Auto-generated method stub
-		System.out.println(sufix);
+	public String formataAdresa(String registre) {
+		return registre+sufix;
 	}
 
 	@Override
-	public void formataTelefon() {
-		// TODO Auto-generated method stub
-		System.out.println(prefix);		
+	public String formataTelefon(String registre) {
+		return prefix+registre;		
 	}
 
 }
