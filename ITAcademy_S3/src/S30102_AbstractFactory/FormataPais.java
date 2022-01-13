@@ -24,7 +24,6 @@ public class FormataPais implements FabricaAbstracta{
 
 	@Override
 	public Registre getRegistre(String registre) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
