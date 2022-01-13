@@ -23,6 +23,13 @@ public class Botiga {
 		task.setTotalCompra(sumaTiquet);
 		task.setFormaPagament(formaPagament);
 	
-		task.executeWith(() -> System.out.println("Gràcies per la teva compra!"));	
+		task.executeWith(() -> {
+			if(task.retornaResultat()) {
+				System.out.println(task.retornaResultat()+" Gràcies per la teva compra!");
+			} else {
+				System.out.println(task.retornaResultat()+" Hi ha hagut un error en el procès de pagament.");
+				System.out.println("Si us plau, torna a intentar el pagament.");
+			}
+		});
 	}
 }
