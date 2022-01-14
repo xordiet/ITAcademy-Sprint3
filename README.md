@@ -19,8 +19,12 @@ Realitzo la tasca 1 nivell 2: Abstract Factory
 ### 13/01/2022
 Realitzo la tasca 1 nivell 3: Command
 
-**Inicio la tasca 2 en una nova branca**
+###### **Inicio la tasca 2 en una nova branca**
 
 Realitzo la tasca 2 nivell 1: Observer
 
 Inicio la tasca 2 nivell 2: Callback
+
+Finalitzo la tasca 2 nivell 2: Callback
+
+Realitzo la tasca 2 nivell 3: Dependency inyection
