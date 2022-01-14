@@ -25,6 +25,7 @@ Realitzo la tasca 2 nivell 1: Observer
 
 Inicio la tasca 2 nivell 2: Callback
 
+### 14/01/2022
 Finalitzo la tasca 2 nivell 2: Callback
 
 Realitzo la tasca 2 nivell 3: Dependency inyection
